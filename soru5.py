@@ -33,13 +33,6 @@ def degerleri_tut(kod_tipi, sinyal_verisi):
                 print("Durumu: " + sinyal_verisi[2] + " - On")
             else:
                 print("Durumu: Gecersiz")
-            if (len(sinyal_verisi) == 4):
-                if (int(sinyal_verisi[3]) == 0):
-                    print("Cevap: " + sinyal_verisi[3] + " - Cevap istenmiyor")
-                elif (int(sinyal_verisi[3]) == 1):
-                    print("Cevap: " + sinyal_verisi[3] + " - Cevap isteniyor")
-                else:
-                    print("Cevap: Gecersiz")
         else:
             print("Kod Tipi: " + kod_tipi + " - Giden")
             if (int(sinyal_verisi[0]) >= 0 and int(sinyal_verisi[0]) <= 50):
